@@ -1,0 +1,99 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(247, 247, 247);
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 18pt;
+  font-weight: 800;
+}
+
+#app {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  display: flex;
+  gap: 0.25em;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  gap: 0.25em;
+  flex-direction: row;
+}
+
+.letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2em;
+  height: 2em;
+  background-color: #eee;
+  border: 1px solid #bbb;
+  border-radius: 0.25em;
+  transition: 0.5s;
+}
+
+.letter.green,
+.letter.gray,
+.letter.yellow {
+  color: white;
+}
+
+.green {
+  background-color: rgb(114, 166, 35);
+}
+
+.gray {
+  background-color: #747474;
+}
+
+.yellow {
+  background-color: rgb(225, 184, 0);
+}
+
+#message {
+  font-size: 9pt;
+  font-weight: 400;
+  margin-top: 1.5em;
+  padding: 0.5em 1em;
+  background-color: rgb(242, 242, 242);
+  border-radius: 0.5em;
+  color: rgb(90, 90, 90);
+}
+
+#message button {
+  border: none;
+  margin-left: 1em;
+  border-radius: 0.25em;
+  padding: 0.25em 0.7em;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+#message.success {
+  background-color: rgb(22, 125, 236);
+  color: white;
+}
+
+#message.defeat {
+  background-color: rgb(55, 25, 119);
+  color: white;
+}
+
+#message.mistake {
+  background-color: rgb(255, 83, 83);
+  color: white;
+}
+
+.emoji {
+  font-size: 25pt;
+}

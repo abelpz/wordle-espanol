@@ -1,0 +1,98 @@
+body {
+  background-color: #f7f7f7;
+  font-family: sans-serif;
+  font-weight: 800;
+}
+
+h1 {
+  font-size: 18pt;
+  font-weight: 800;
+}
+
+#app {
+  text-align: center;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.board {
+  flex-direction: column;
+  gap: .25em;
+  display: flex;
+}
+
+.row {
+  flex-direction: row;
+  gap: .25em;
+  display: flex;
+}
+
+.letter {
+  background-color: #eee;
+  border: 1px solid #bbb;
+  border-radius: .25em;
+  justify-content: center;
+  align-items: center;
+  width: 2em;
+  height: 2em;
+  transition: all .5s;
+  display: flex;
+}
+
+.letter.green, .letter.gray, .letter.yellow {
+  color: #fff;
+}
+
+.green {
+  background-color: #72a623;
+}
+
+.gray {
+  background-color: #747474;
+}
+
+.yellow {
+  background-color: #e1b800;
+}
+
+#message {
+  color: #5a5a5a;
+  background-color: #f2f2f2;
+  border-radius: .5em;
+  margin-top: 1.5em;
+  padding: .5em 1em;
+  font-size: 9pt;
+  font-weight: 400;
+}
+
+#message button {
+  color: #ffffffe6;
+  background-color: #0000004d;
+  border: none;
+  border-radius: .25em;
+  margin-left: 1em;
+  padding: .25em .7em;
+}
+
+#message.success {
+  color: #fff;
+  background-color: #167dec;
+}
+
+#message.defeat {
+  color: #fff;
+  background-color: #371977;
+}
+
+#message.mistake {
+  color: #fff;
+  background-color: #ff5353;
+}
+
+.emoji {
+  font-size: 25pt;
+}
+
+/*# sourceMappingURL=index.4d663569.css.map */
